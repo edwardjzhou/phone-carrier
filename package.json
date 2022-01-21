@@ -1,7 +1,7 @@
 {
   "name": "phone-carrier",
   "type": "commonjs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "phone carrier lookups",
   "main": "index.js",
   "scripts": {

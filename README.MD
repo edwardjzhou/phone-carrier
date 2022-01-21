@@ -10,6 +10,7 @@ npm install phone-carrier
 
 ## Quick Start / API
 ```js
+// ESM
 import PhoneNumberToCarrierMapper from 'phone-carrier';
 async function lookup(msisdn) {
     const mapper = PhoneNumberToCarrierMapper.getInstance()
@@ -19,6 +20,12 @@ async function lookup(msisdn) {
 
 lookup(`+41798765432`) // Swisscom
 ```
+```js
+// common-js
+const { PhoneNumberToCarrierMapper } = require('phone-carrier')
 
+const mapper = PhoneNumberToCarrierMapper.getInstance()
+mapper.getNameForValidNumber(`+917897888888`).then(console.log) // AirTel
+```
 - https://github.com/featurerich1/phoneCarriers
 - https://featurerich1.github.com
