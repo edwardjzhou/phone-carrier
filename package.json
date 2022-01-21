@@ -11,27 +11,22 @@
     "build": "npm run clean && npm run compile && npm run test",
     "pub": "npm run build && npm publish"
   },
-  "author": "Edward<github.com/featurerich1>",
+  "author": "Edward <github.com/featurerich1>",
   "homepage": "https://github.com/featurerich1/phone-carrier",
   "keywords": [
-      "phone",
-      "msdin",
-      "carrier"
+    "phone",
+    "msdin",
+    "carrier"
   ],
-  "repository": {
-    "type": "git",
-    "url": "http://github.com/Marak/colors.js.git"
-  },
   "engines": {
-      "node": ">=16.13"
+    "node": ">=16.13"
   },
   "files": [
-      "/dist",
-      "index.js"
+    "/dist",
+    "index.js"
   ],
   "dependencies": {
-    "libphonenumber-js": "^1.9.43"
-  }
+    "libphonenumber-js": "1.9.43"
+  },
+  "devDependencies": {}
 }
-
-

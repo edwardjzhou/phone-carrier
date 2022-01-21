@@ -28,13 +28,6 @@ class FlyweightMapStorage extends PhonePrefixMapStorageStrategy_1.default {
     }
     static storeWordInBuffer(buffer, wordSize, index, value) {
         throw 'unused';
-        const wordIndex = index * wordSize;
-        if (wordSize === this.SHORT_NUM_BYTES) {
-            buffer.writeInt16BE(value, wordIndex);
-        }
-        else {
-            buffer.writeInt32BE(value, wordIndex);
-        }
     }
     readExternal(objectInput) {
         let offset = 5;
