@@ -1,0 +1,44 @@
+{
+  "name": "phone-carrier",
+  "type": "commonjs",
+  "version": "1.0.0",
+  "description": "phone carrier lookups",
+  "main": "index.js",
+  "scripts": {
+    "clean": "[ -d './dist' ] && rm -rf ./dist",
+    "compile": "prettier ./src --write > /dev/null 2>&1 || true && /usr/local/bin/tsc -p ./tsconfig.json > /dev/null 2>&1 || true",
+    "test": "mocha ./dist/**/*.test.js || true",
+    "build": "npm run clean && npm run compile && npm run test",
+    "pub": "npm run build && npm publish"
+  },
+  "author": "Edward<github.com/featurerich1>",
+  "homepage": "https://github.com/featurerich1/phone-carrier",
+  "keywords": [
+      "phone",
+      "msdin",
+      "carrier"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/Marak/colors.js.git"
+  },
+  "engines": {
+      "node": ">=16.13"
+  },
+    "main": "index.js",
+
+    "files": [
+        "examples",
+        "lib",
+        "LICENSE",
+        "safe.js",
+        "themes",
+        "index.d.ts",
+        "safe.d.ts"
+    ],
+  "dependencies": {
+    "libphonenumber-js": "^1.9.43"
+  }
+}
+
+
