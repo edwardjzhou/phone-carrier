@@ -25,17 +25,10 @@
   "engines": {
       "node": ">=16.13"
   },
-    "main": "index.js",
-
-    "files": [
-        "examples",
-        "lib",
-        "LICENSE",
-        "safe.js",
-        "themes",
-        "index.d.ts",
-        "safe.d.ts"
-    ],
+  "files": [
+      "/dist",
+      "index.js"
+  ],
   "dependencies": {
     "libphonenumber-js": "^1.9.43"
   }

@@ -20,5 +20,5 @@ async function lookup(msisdn) {
 lookup(`+41798765432`) // Swisscom
 ```
 
-- https://codepen.io/davidkpiano/pen/RjaBpW
+- https://github.com/featurerich1/phoneCarriers
 - https://featurerich1.github.com
