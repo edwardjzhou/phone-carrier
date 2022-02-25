@@ -1,8 +1,8 @@
 {
   "name": "phone-carrier",
   "type": "commonjs",
-  "version": "1.0.2",
-  "description": "phone carrier lookups",
+  "version": "1.0.4",
+  "description": "cell phone carrier/msisdn carrier name lookups",
   "main": "index.js",
   "scripts": {
     "clean": "[ -d './dist' ] && rm -rf ./dist",
@@ -15,8 +15,9 @@
   "homepage": "https://github.com/featurerich1/phone-carrier",
   "keywords": [
     "phone",
-    "msdin",
-    "carrier"
+    "msisdin",
+    "mobile carrier",
+    "cell phone number"
   ],
   "engines": {
     "node": ">=16.13"

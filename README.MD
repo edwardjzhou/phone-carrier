@@ -4,24 +4,25 @@
 npm install phone-carrier
 ```
 ## Description
-- Use it as you would the google's libphonenumber's PhoneNumberToCarrierMapper in Java
-- Uses libphonenumber-js
-- Is a TypeScript rendition of the Java version of libphonenumber's PhoneNumberToCarrierMapper because the JavaScript version of libphonenumber didn't have a PhoneNumberToCarrierMapper
-
+- Use it as you would Google's libphonenumber's PhoneNumberToCarrierMapper in Java
+- Is a TypeScript rendition of PhoneNumberToCarrierMapper because the JavaScript version of libphonenumber on NPM didn't have a PhoneNumberToCarrierMapper
+- Batteries included. Mobile carrier names are read from included binary-encoded files.
+- Has no error handling (we read from files). Be sure to try-catch your async functions and .catch your promises.
+- Depends upon NPM package libphonenumber-js
 ## Quick Start / API
 ```js
 // Example 1: ESM and await syntax
 import PhoneNumberToCarrierMapper from 'phone-carrier';
-async function lookup(msisdn) {
-    const mapper = PhoneNumberToCarrierMapper.getInstance()
-    const carrierName = await mapper.getNameForValidNumber(msisdn)
-    return carrierName 
-}
 
-lookup(`+41798765432`) // Swisscom
+async function lookup(msisdn) {
+    const mapper = PhoneNumberToCarrierMapper.getInstance();
+    const carrierName = await mapper.getNameForValidNumber(msisdn);
+    return carrierName;
+}
+console.log(lookup(`+41798765432`)); // Swisscom
 ```
 ```js
-// Example 2: common-js and promise syntax
+// Example 2: CommonJS and promise syntax
 const { PhoneNumberToCarrierMapper } = require('phone-carrier')
 
 const mapper = PhoneNumberToCarrierMapper.getInstance()
