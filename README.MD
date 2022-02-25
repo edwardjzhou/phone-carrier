@@ -4,6 +4,9 @@
 npm install phone-carrier
 ```
 ## Description
+1. You have a VALID cell phone number.
+2. You want the cell phone carrier's name!
+3. Input it into the mapper this package provides to get it.
 - Use it as you would Google's libphonenumber's PhoneNumberToCarrierMapper in Java
 - Is a TypeScript rendition of PhoneNumberToCarrierMapper because the JavaScript version of libphonenumber on NPM didn't have a PhoneNumberToCarrierMapper
 - Batteries included. Mobile carrier names are read from included binary-encoded files.

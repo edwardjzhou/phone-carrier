@@ -1,13 +1,13 @@
 {
   "name": "phone-carrier",
   "type": "commonjs",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "cell phone carrier/msisdn carrier name lookups",
   "main": "index.js",
   "scripts": {
     "clean": "[ -d './dist' ] && rm -rf ./dist",
     "compile": "prettier ./src --write > /dev/null 2>&1 || true && /usr/local/bin/tsc -p ./tsconfig.json > /dev/null 2>&1 || true",
-    "test": "mocha ./dist/**/*.test.js || true",
+    "test": "mocha ./dist/**/*.test.js",
     "build": "npm run clean && npm run compile && npm run test",
     "pub": "npm run build && npm publish"
   },
@@ -15,9 +15,10 @@
   "homepage": "https://github.com/featurerich1/phone-carrier",
   "keywords": [
     "phone",
-    "msisdin",
-    "mobile carrier",
-    "cell phone number"
+    "cell phone",
+    "MSISDN",
+    "mobile carrier names",
+    "cell phone carrier names"
   ],
   "engines": {
     "node": ">=16.13"
